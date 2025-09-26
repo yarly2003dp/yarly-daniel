@@ -1,0 +1,129 @@
+*{
+margin: 0;
+padding: 0;
+}
+body{
+    justify-content: center;
+    
+}
+
+.saludo{
+    color: rgb(38, 191, 171);
+    background-color: rgb(103, 92, 92);
+    padding: 10px;
+    font-size: 6rem;
+    font-family: monospace;
+    text-align: center;
+    font-weight: bold;
+    border: 8px dashed red;
+    border-radius: 30px;
+    border-color: rgb(25, 118, 72);
+
+}
+.contenedor_img{
+    border: 3px solid black;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content:center ;
+    padding: 10px;
+    
+}
+.foto{
+    border-radius: 100%;
+    width: 20%;
+    height: 5%;
+    border: 2px solid rgb(249, 217, 39);
+    box-shadow: 0 4px 10px rgb(1, 31, 1);
+    justify-content: center;
+
+}
+.imagen{
+    text-align: center;
+}
+.foto:hover{
+    transition: all0.5s ease;
+    transform: translate(-15px);
+    box-shadow: 0 4px 10px rgb(1, 31, 1);
+}
+.cont_principal{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+   
+}
+.cont_bibliografia{
+    width: 30%;
+    border: 4px solid rgb(31, 90, 62);
+    margin: 15px;
+    box-shadow: 0 5px 10px gray;
+    border-radius: 10px;
+    background-image: url(https://png.pngtree.com/background/20230517/original/pngtree-the-bald-eagle-in-an-animated-ad-picture-image_2640250.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    opacity: 0.8;
+    
+    
+}
+.des_bibliografia{
+    padding: 20px;
+    text-align: justify;
+    font-size: 1.5rem;
+    font-family: cursive;
+    color: black;
+    text-shadow: 0 3px 5px red;
+
+
+}
+.cont_experiencia{
+     width: 30%;
+    border: 4px solid rgb(25, 54, 5);
+    margin: 15px;
+    box-shadow: 0 5px 10px rgb(35, 3, 95);
+    border-radius: 10px;
+    background-image: url(https://png.pngtree.com/background/20230517/original/pngtree-the-bald-eagle-in-an-animated-ad-picture-image_2640250.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 340px;
+    opacity: 0.8;
+    color: rgb(37, 110, 173);
+     text-shadow: 0 3px 5px red;
+    
+
+}
+.cont_experiencia ul{
+    list-style: none;
+    font-size: x-large;
+}
+.cont_experiencia h2{
+    color: rgb(9, 172, 221);
+}
+.cont_estudio{
+     width: 30%;
+    border: 4px solid rgb(31, 93, 36);
+    margin: 15px;
+    box-shadow: 0 5px 10px gray;
+    border-radius: 10px;
+    background-image: url(https://content.elmueble.com/medio/2023/03/02/perro-de-raza-beagle_67c65dda_230302133829_900x900.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 340px;
+    opacity: 0.8;
+    color: aliceblue;
+     text-shadow: 0 3px 5px red;
+}
+.cont_estudio ul{ 
+    list-style: none;
+    font-size: x-large;
+}
+.cont_estudio h2{
+    color: rgb(110, 8, 8);
+}
+.iframe{
+    width: 100%;
+    height: 90vh;
+    
+
+}

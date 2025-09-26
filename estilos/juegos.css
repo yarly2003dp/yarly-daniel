@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.cuerpo-game{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1d3290 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+
+.game-container{
+    max-width:100% ;
+    margin: 0 auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow:  0 20px 40px rgba(0, 0, 0, 0.5);
+    background-color: rgb(59, 163, 159)
+    
+}
+
+.game-header{
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(87, 78, 78);
+}
+
+.game-header h1{
+    font-size: 2.5rem;
+    margin-bottom:  15px;
+    text-shadow: 2px 2px 4px rgb(54, 53, 53);
+}
+ .score-container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: wrap;
+ }
+
+ .score-item{
+    border: 2px solid  ;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgb(47, 65, 142);
+ }
+ .score-label{
+    font-weight: bold;
+    color: white;
+    margin-right: 5px;
+ }
+
+ .score-value{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(162, 119, 9);
+ }
+
+ /*selector de categoria*/
+
+ .category-selector{
+    padding: 25px;
+    text-align: center;
+    background-color: white;
+
+ }
+ .category-selector h3{
+    font-size: 1.3em;
+    color: #333;
+    margin-bottom: 20px;
+ }
+
+ .category-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+ }
+
+ /* area del juego */
+
+ .game-area{
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    border: 2px solid rgb(11, 11, 13);
+    gap: 30px;
+    align-items: start;
+ }
+.word-info{
+    text-align: center;
+}
+
+.current-category{
+    font-size: 1.2em;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.word-display{
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    
+}
+.hangman-continer{
+    text-align: center;
+}
+#hangmanSvg{
+    border: 3px solid rgb(151 , 156, 157);
+    border-radius: 15px;
+    background-color: white;
+    margin-bottom: 15px;
+}
+.attempts-counter{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #6a0606;
+}
+
+/* controles de juego */
+.game-controls{
+    padding: 30px;
+    background-color: white;
+}
+
+/* area de psitas */
+.hint-area{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hint-button{
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #ffa726 0%, #fb8c00 100%);
+    color: rgb(18, 17, 17);
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hint-button:hover:not(:disabled){
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5)
+
+}
+
+.hint-button :disabled{
+    background-color: rgb(41, 41, 41);
+    cursor: not-allowed;
+}
+
+.hint-display{
+    margin-top: 15px;
+    padding: 15px;
+    background-color: rgb(41, 41, 41);
+    border: 2px solid #cca41e;
+    border-radius: 10px;
+    font-style: italic;
+    font-size: 1.1em;
+    color: #633702;
+    display: none;
+}
+
+.hint-display.show{
+    display: block;
+    animation: slideDown 0.3 ease;
+
+}
+
+/* teclado virtual */
+
+.keyboard{
+    margin-bottom: 25px;
+}
+
+.keyboard-row{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.key{
+    height: 50px;
+    width: 50px;
+    border: 2px solid#ddd;
+    border-radius: 8px;
+    background-color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all0.2s ease;
+    color: #333;
+
+}
+
+.key:hover{
+    background: #e3f2fd;
+    border-color: #2196f3;
+    transform: scale(1.05);
+}
+
+/* botones de accion */
+.action-buttons{
+    display:flex ;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+
+}
+
+.action-button{
+    padding: 12px 15px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #4caf50 0%, #45a049 100%);
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 140x;
+
+}
+
+.action-button:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(78, 164, 81, 0.9);
+}
+
+.action-button.secundary{
+    background: linear-gradient(135deg,#d34912 0%, 9f2202 100%);
+
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.modal.show{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: faseIn 0.3s ease;
+}
+
+.modal-content{
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 20px 40px rgba(9, 9, 9, 0.5);
+    animation: sLideUp 0.3s ease;
+}
+
+.resultTtle{
+    margin-bottom:15px ;
+    color: #333;
+}
+
+.result-stats{
+    margin: 20px 0;
+    padding: 15px;
+    background: #ecf3fa;
+    border-radius: 8px;
+    font-size: 0.9em;
+}
+
+.stats-container{
+    padding: 30px;
+    background: #dbdcdc;
+
+}
+
+.title-stats{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+
+}
+
+.category-stats{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 20px;
+
+}

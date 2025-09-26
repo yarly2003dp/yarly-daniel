@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   
+
+    <title>input en tiempo real</title>
+    <style>
+        body{ font-family: system-ui, arial; padding: 20px;}
+        input{width: 100%; padding: 8px; font-size: 16px; box-sizing: border-box;}
+        p {margin-top: 12px; font-size: 18px;}
+    </style>
+</head>
+<body>
+    <label for="texto">escribe algo:</label>
+    <input id="texto" type="text" placeholder="algo nuevo..."/>
+    <p id="salida">aqui aparecera lo que escribas.</p>
+
+    <script>const input= document.getElementById('texto');
+        const salida = document.getElementById('salida');
+
+        input.addEventListener('input', (e)=>{
+        })
+        
+        
+        salida.textContent = e.target.value  ||'aqui aparecera lo que escribas.';
+    </script>
+</head>
+<body>
+    <button id="miBoton">haz clic aqui</button>
+
+<head>
+    <meta charset="UTF-8">
+     <little>contador de clics</little>
+</head>
+<body>
+    <button id="miBoton">haz clic aqui</button>
+    <p id="contador">el boton ha sido precionado 0 veces</p>
+    <script>
+        let veces = 0;
+        document.getElementById("miBoton").addEventListener("click",function() {
+            veces++;
+        document.getElementById("contador").textContent = "el boton ha sido precionado " + veces + "veces"
+        });
+       
+    </script>
+    
+</body>
+     
+
+    <script src="eventos.js"></script>
+</body>
+</html>
