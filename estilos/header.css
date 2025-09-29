@@ -36,9 +36,14 @@ header{
  -webkit-user-select: none;
  touch-action: manipulation;
  will-change: transform;
+ text-decoration: none;
 }
 .nav:disabled {
  pointer-events: none;
+}
+nav a{
+  color: black;
+  text-decoration: none;
 }
 
 .nav:hover {
